@@ -1,29 +1,24 @@
-import React , { useState , useContext } from 'react';
+import React , { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import menu from '@icons/icon_menu.svg';
 import logo from '@logos/icon-192x192.png';
 import Menu from '@components/Menu';
-import AppContext from '@context/AppContext';
+
 
 
 
 import styles from '@styles/Header.module.scss';
-import Contact from './Contact';
+
 
 
 const Header = () => {
-	const [toggle,setToggle] = useState(false);
-	const [toggle2,setToggle2] = useState(false);
-	const [toggle3,setToggle3] = useState(false);
-	const { state } = useContext(AppContext);
 
-	const handleToggle  = () => {
-		setToggle(!toggle);
-	};
-	const handleToggle3  = () => {
-		setToggle3(!toggle3);
-	};
+	const [toggle2,setToggle2] = useState(false);
+
+	
+
+	
 	
 	return (
 	

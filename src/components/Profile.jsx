@@ -13,7 +13,7 @@ import react from '../assets/icons/codeicon/003-physics.png';
 import vercel from '../assets/icons/codeicon/vercel.png';
 import git from '../assets/icons/codeicon/Git_icon.svg.png';
 
-import projectimg1 from '../assets/img/pexelsalenadarmel7862509Small.jpg'
+import projectimg1 from '../assets/img/pexelsalenadarmel7862509Small.jpg';
 
 
 
@@ -30,7 +30,7 @@ const Profile = () => {
       <div className={styles.contenedorPerfil}>
           <div className={styles.perfilNombre}>JULIAN ANDRADE </div>
           <div className={styles.PerfilFoto}>
-            <Image className={styles.PerfilFotoImg}src={imgperfil}></Image>
+            <Image className={styles.PerfilFotoImg}src={imgperfil}alt="profileimage"></Image>
           </div>
           <div className={styles.PerfilProfesion}>FRONTEND DEVELOPER</div>
       </div>  
@@ -43,14 +43,14 @@ const Profile = () => {
           <div className={styles.Titulo}>Tech Skills</div>
           <div className={styles.habilidadesPersonales}>
                 <div className={styles.skills}><Image className={styles.skillsimg} src={html} alt="Html"/></div>
-                <div className={styles.skills}><Image className={styles.skillsimg} src={css} z/></div>
-                <div className={styles.skills}><Image className={styles.skillsimg} src={node}/></div>
-                <div className={styles.skills}><Image className={styles.skillsimg} src={js}/></div>
-                <div className={styles.skills}><Image className={styles.skillsimg} src={react}/></div>
-                <div className={styles.skills}><Image className={styles.skillsimg} src={api}/></div>
-                <div className={styles.skills}><Image className={styles.skillsimg} src={git} width={30} height={30} /></div>
-                <div className={styles.skills}><Image className={styles.skillsimg} src={github}/></div>
-                <div className={styles.skills}><Image className={styles.skillsimg} src={vercel} width={30} height={30} /></div>
+                <div className={styles.skills}><Image className={styles.skillsimg} src={css} alt="css"/></div>
+                <div className={styles.skills}><Image className={styles.skillsimg} src={node} alt="node"/></div>
+                <div className={styles.skills}><Image className={styles.skillsimg} src={js} alt="js"/></div>
+                <div className={styles.skills}><Image className={styles.skillsimg} src={react} alt="react"/></div>
+                <div className={styles.skills}><Image className={styles.skillsimg} src={api} alt="api"/></div>
+                <div className={styles.skills}><Image className={styles.skillsimg} src={git} alt="git" width={30} height={30} /></div>
+                <div className={styles.skills}><Image className={styles.skillsimg} src={github} alt="github"/></div>
+                <div className={styles.skills}><Image className={styles.skillsimg} src={vercel}  alt="vercel"width={30} height={30} /></div>
           </div>
       </setion>
 
@@ -61,17 +61,17 @@ const Profile = () => {
 
       <div className={styles.contenedorProyectos}>
           
-            <div className={styles.proyectoImg}><Image src={projectimg1}></Image></div>
+            <div className={styles.proyectoImg}><Image src={projectimg1}alt="imageproyecto"></Image></div>
             <div className={styles.proyectoTitulo}>E-commerce Shopping cart</div>
               <div className={styles.proyectoDescripcion}>Esto es un texto random sobre el presente proyecto,    
                          la    idea es que esta imagen tenga un slider de imgs del proyecto            
                                    info</div>
           <div className={styles.skillsProyectos}>
-              <Image className={styles.skillsProyectoimg} src={html}/>
-              <Image className={styles.skillsProyectoimg} src={css}/>
-              <Image className={styles.skillsProyectoimg} src={api}/>
-              <Image className={styles.skillsProyectoimg} src={react}/>
-              <Image className={styles.skillsProyectoimg} src={github}/>
+              <Image className={styles.skillsProyectoimg} src={html} alt="Html"/>
+              <Image className={styles.skillsProyectoimg} src={css} alt="Css"/>
+              <Image className={styles.skillsProyectoimg} src={api} alt="api"/>
+              <Image className={styles.skillsProyectoimg} src={react} alt="react"/>
+              <Image className={styles.skillsProyectoimg} src={github} alt="github"/>
           </div>
       </div>
       
@@ -79,33 +79,33 @@ const Profile = () => {
       
       <div className={styles.contenedorProyectos}>
           
-            <div className={styles.proyectoImg}><Image src={projectimg1}></Image></div>
+            <div className={styles.proyectoImg}><Image src={projectimg1}alt="imageproyecto2"></Image></div>
             <div className={styles.proyectoTitulo}>Buisness Landing Page</div>
               <div className={styles.proyectoDescripcion}>Esto es un texto random sobre el presente proyecto,    
                          la    idea es que esta imagen tenga un slider de imgs del proyecto            
                                    info</div>
           <div className={styles.skillsProyectos}>
-              <Image className={styles.skillsProyectoimg} src={html}/>
-              <Image className={styles.skillsProyectoimg} src={css}/>
+              <Image className={styles.skillsProyectoimg} src={html}alt="Html"/>
+              <Image className={styles.skillsProyectoimg} src={css}alt="css"/>
           </div>
       </div>
       
       {/* proyecto numero tres */}
       <div className={styles.contenedorProyectos}>
           
-            <div className={styles.proyectoImg}><Image src={projectimg1}></Image></div>
+            <div className={styles.proyectoImg}><Image src={projectimg1}alt="imageproyecto3"></Image></div>
             <div className={styles.proyectoTitulo}>Personal Buisness Card</div>
               <div className={styles.proyectoDescripcion}>Esto es un texto random sobre el presente proyecto,    
                          la    idea es que esta imagen tenga un slider de imgs del proyecto            
                                    info</div>
           <div className={styles.skillsProyectos}>
-              <Image className={styles.skillsProyectoimg} src={html}/>
-              <Image className={styles.skillsProyectoimg} src={css}/>
-              <Image className={styles.skillsProyectoimg} src={vercel} width={30} height={30} />
-              <Image className={styles.skillsProyectoimg} src={git} width={30} height={30} />
-              <Image className={styles.skillsProyectoimg} src={api}/>
-              <Image className={styles.skillsProyectoimg} src={react}/>
-              <Image className={styles.skillsProyectoimg} src={github}/>
+              <Image className={styles.skillsProyectoimg} src={html} alt="Html"/>
+              <Image className={styles.skillsProyectoimg} src={css} alt="css"/>
+              <Image className={styles.skillsProyectoimg} src={vercel} width={30} height={30} alt="vercel"/>
+              <Image className={styles.skillsProyectoimg} src={git} width={30} height={30} alt="git"/>
+              <Image className={styles.skillsProyectoimg} src={api} alt="api"/>
+              <Image className={styles.skillsProyectoimg} src={react} alt="react"/>
+              <Image className={styles.skillsProyectoimg} src={github} alt="github"/>
           </div>
       </div>
       
@@ -113,7 +113,7 @@ const Profile = () => {
       
     </section>
     </>
-  )
-}
+  );
+};
 
-export default Profile
+export default Profile;

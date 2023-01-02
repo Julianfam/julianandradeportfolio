@@ -1,4 +1,4 @@
-import React , { useState , useContext } from 'react';
+import React , { useState } from 'react';
 import styles from '@styles/Menu.module.scss';
 import Link from 'next/link';
 import Contact from './Contact';
