@@ -1,9 +1,10 @@
 import Head from 'next/head';
+import Profile from '@components/Profile';
 import Footer from '@components/Footer';
 
 import styles from '../styles/Home.module.css';
 
-import Profile from '@components/profile';
+
 
 
 

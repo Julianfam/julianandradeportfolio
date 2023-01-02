@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "eslint src/ --fix",
-    "export": "next build && next export"
+    "export": "next build && next export",
+    "build:rollup": "rollup -c rollup.config.js"
   },
   "dependencies": {
     "@jridgewell/sourcemap-codec": "^1.4.14",
