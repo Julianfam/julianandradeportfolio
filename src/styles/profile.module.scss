@@ -1,0 +1,116 @@
+@import '@styles/_vars.scss';
+
+
+// profile
+.contenedorPerfil {
+    background-color: $--main-color;
+    width: 300px;
+    height: auto;
+    border: 4px $--secondary-color solid;
+    border-radius: 20px;
+    padding: 5px;
+    margin-bottom: 50px;
+    margin: 0 auto 0 auto;
+    // box shadow offset
+        -webkit-box-shadow: 0px 0px 38px 25px rgba(251,225,3,0.74);
+        -moz-box-shadow: 0px 0px 38px 25px rgba(251,225,3,0.74);
+        box-shadow: 0px 0px 38px 25px rgba(251,225,3,0.74);
+    // box shadow inset
+        -webkit-box-shadow: inset 0px 0px 19px 3px rgba(251,225,3,0.46);
+        -moz-box-shadow: inset 0px 0px 19px 3px rgba(251,225,3,0.46);
+        box-shadow: inset 0px 0px 19px 3px rgba(251,225,3,0.46);
+    .perfilNombre{    
+        height: 50px;
+        text-align: right;
+        color:  $--complementary-color;
+        line-height: normal;
+        padding: 12px 12px 0 0;  
+    }
+    .PerfilFoto{
+        height: 300px;
+        .PerfilFotoImg {
+            width: auto;
+            height: 100%;
+            margin-left: auto;
+            display: flex;
+        }
+    }
+    .PerfilProfesion{
+        
+        height: 50px;
+        text-align: right;
+        padding: 12px 12px 0 0;
+        color:  $--complementary-color;
+    }
+   
+}
+
+
+// skills
+
+.Titulo{
+    color: $--complementary-color;
+    text-align: center;
+    margin: 15px;
+    font-weight: 600;
+}
+
+.habilidadesPersonales {
+    display: grid;
+    margin: 15px;
+    min-width: 300px;
+	grid-template-columns: repeat(auto-fill, 50px);
+    margin-bottom: 15px;
+    .skills {
+        width: 30px;
+        height: 30px;
+        margin: 7px;
+    }
+}
+
+// proyects
+
+.contenedorProyectos {
+    width: 300px;
+    border: 1px solid $--complementary-color;
+    border-radius: 10px;
+    margin: auto auto 35px auto;
+    background-color: $--background-color;
+    .Titulo {
+        margin: 10px;
+    }
+    
+    
+    .proyectoImg {
+        display: inline-block;
+        width: 290px;
+        height: auto;
+        margin: 5px;
+        background-color: $--complementary-color;
+        img {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            
+        }
+
+    }
+    .proyectoTitulo {
+        color: $--secondary-color;
+        text-align: center;
+    }
+    .proyectoDescripcion {
+        display: inline-block;
+        text-align: justify;
+        margin: 10px;
+        font-size: $--sm;
+    }
+
+    .skillsProyectos {
+        margin: 5px;
+        .skillsProyectoimg {
+            margin-left: 10px;
+        }
+    }
+}
+

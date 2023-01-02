@@ -2,13 +2,14 @@ import React , { useState , useContext } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import menu from '@icons/icon_menu.svg';
-import logo from '@logos/logo_castell.svg';
+import logo from '@logos/icon-192x192.png';
 import Menu from '@components/Menu';
 import AppContext from '@context/AppContext';
 
 
 
 import styles from '@styles/Header.module.scss';
+import Contact from './Contact';
 
 
 const Header = () => {
@@ -34,10 +35,10 @@ const Header = () => {
 				</Link>
 				<ul>
 					<li>
-						<Link href="./">Sobre nosotros</Link>
+						<Link href="./">Perfil</Link>
 					</li>
 					<li>
-						<Link href="./">Clientes</Link>
+						<Link href="./">Portafolio</Link>
 					</li>
 					
 					<li>
@@ -49,7 +50,7 @@ const Header = () => {
 			<div className={styles['navbar-right']}>
 				<ul>
 					<button className={styles['navbar-shopping-cart']} onClick={() => setToggle2(!toggle2)}>
-						<Image src={menu} alt="shopping cart"  />
+						<Image src={menu} alt="Menu"  />
 					</button>
 				</ul>
 			</div>

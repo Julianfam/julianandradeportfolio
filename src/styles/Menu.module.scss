@@ -2,14 +2,14 @@
 
 .Menu {
 	position: absolute;
-	width: 100px;
+	width: 200px;
 	height: auto;
 	border: 1px solid $--very-light-pink;
 	border-radius: 6px;
 	padding: 20px 20px 0 20px;
 	right: 50px;
 	top: 60px;
-	background-color: $--white;
+	background-color: $--background-color;
 }
 .Menu ul {
 	list-style: none;
@@ -28,12 +28,21 @@
 	border-top: 1px solid $--very-light-pink;
 }
 .Menu ul li:last-child a {
-	color: $--hospital-green;
+	color: $--main-color;
 	font-size: $--sm;
 }
 .Menu ul li a {
-	color: $--black;
+	color: $--main-color;
 	text-decoration: none;
 	margin-bottom: 20px;
 	display: inline-block;
+}
+.Menu ul li button {
+	color: $--main-color;
+	font-size: $--md;
+	font-weight: 600;
+	padding: 5px;
+	background-color: $--background-color;
+	margin: auto;
+	margin-bottom: 20px;
 }
