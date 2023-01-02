@@ -7,6 +7,7 @@ import NotFound from '@pages/NotFound.jsx';
 import AppContext from '@context/AppContext';
 import useInitialState from '@hooks/useInitialState'; 
 import '@styles/global.scss';
+import Profile from '@components/Profile';
 
 const App = () => {
     const initialState = useInitialState();
@@ -17,7 +18,7 @@ const App = () => {
                     <Routes>
                     <Route path="/" element={<Home/>} />
 
-            
+                    <Route path="/profile" element={<Profile/>} /> 
                     <Route path="*" element={<NotFound/>} /> 
                 </Routes> 
                 </Layout>       
