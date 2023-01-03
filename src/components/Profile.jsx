@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '@styles/profile.module.scss';
+import Link from 'next/link';
 import Image from 'next/image';
 import imgperfil from '../assets/img/pngjuliancamisablanca.png';
 
@@ -13,9 +14,10 @@ import react from '../assets/icons/codeicon/003-physics.png';
 import vercel from '../assets/icons/codeicon/vercel.png';
 import git from '../assets/icons/codeicon/Git_icon.svg.png';
 
-import projectimg1 from '../assets/img/pexelsalenadarmel7862509Small.jpg';
 
-
+import projectimg1 from '../assets/img/portafolioProgramaciónWeb-02.jpg';
+import projectimg2 from '../assets/img/portafolioProgramaciónWeb-01.jpg';
+import projectimg3 from '../assets/img/image-3.jpg';
 
 const Profile = () => {
 
@@ -32,7 +34,7 @@ const Profile = () => {
           <div className={styles.PerfilFoto}>
             <Image className={styles.PerfilFotoImg}src={imgperfil}alt="profileimage"></Image>
           </div>
-          <div className={styles.PerfilProfesion}>FRONTEND DEVELOPER</div>
+          <div className={styles.PerfilProfesion}>JAVASCRIPT DEVELOPER</div>
       </div>  
 
 
@@ -58,13 +60,13 @@ const Profile = () => {
   <div className={styles.Titulo}>Proyects</div>
       {/* proyecto numero uno  */}
 
+    <section className={styles.allproyectcontainer}>
 
       <div className={styles.contenedorProyectos}>
           
             <div className={styles.proyectoImg}><Image src={projectimg1}alt="imageproyecto"></Image></div>
             <div className={styles.proyectoTitulo}>E-commerce Shopping cart</div>
-              <div className={styles.proyectoDescripcion}>Esto es un texto random sobre el presente proyecto,    
-                         la    idea es que esta imagen tenga un slider de imgs del proyecto            
+              <div className={styles.proyectoDescripcion}>This ecommerce website design is developed in React and NextJS, and features a functional shopping cart that allows users to easily add and remove products from their cart. The user interface is user-friendly and easy to use, and navigation is intuitive for users to easily find the products they are looking for. Additionally, the page loads quickly and is secure, ensuring a pleasant shopping experience for users.          
                                    info</div>
           <div className={styles.skillsProyectos}>
               <Image className={styles.skillsProyectoimg} src={html} alt="Html"/>
@@ -73,16 +75,17 @@ const Profile = () => {
               <Image className={styles.skillsProyectoimg} src={react} alt="react"/>
               <Image className={styles.skillsProyectoimg} src={github} alt="github"/>
           </div>
+          <button className ={styles.botoncontacto}> <Link href="https://nextstorejs.vercel.app">Visit me!</Link> </button>
+          
       </div>
       
       {/* proyecto numero dos */}
       
       <div className={styles.contenedorProyectos}>
           
-            <div className={styles.proyectoImg}><Image src={projectimg1}alt="imageproyecto2"></Image></div>
+            <div className={styles.proyectoImg}><Image src={projectimg2}alt="imageproyecto2"></Image></div>
             <div className={styles.proyectoTitulo}>Buisness Landing Page</div>
-              <div className={styles.proyectoDescripcion}>Esto es un texto random sobre el presente proyecto,    
-                         la    idea es que esta imagen tenga un slider de imgs del proyecto            
+              <div className={styles.proyectoDescripcion}> I created a responsive mobile design for a landing page on Batabit. The design ensures that the page looks great and functions properly on a wide range of mobile devices, regardless of screen size or orientation. The layout adjusts seamlessly to fit the user&apos;s device, and all elements of the page, including text, images, and buttons, are easy to interact with on a touch screen. This ensures a seamless and enjoyable user experience for visitors to the page on mobile devices.          
                                    info</div>
           <div className={styles.skillsProyectos}>
               <Image className={styles.skillsProyectoimg} src={html}alt="Html"/>
@@ -93,7 +96,7 @@ const Profile = () => {
       {/* proyecto numero tres */}
       <div className={styles.contenedorProyectos}>
           
-            <div className={styles.proyectoImg}><Image src={projectimg1}alt="imageproyecto3"></Image></div>
+            <div className={styles.proyectoImg}><Image src={projectimg3}alt="imageproyecto3"></Image></div>
             <div className={styles.proyectoTitulo}>Personal Buisness Card</div>
               <div className={styles.proyectoDescripcion}>Esto es un texto random sobre el presente proyecto,    
                          la    idea es que esta imagen tenga un slider de imgs del proyecto            
@@ -107,10 +110,11 @@ const Profile = () => {
               <Image className={styles.skillsProyectoimg} src={react} alt="react"/>
               <Image className={styles.skillsProyectoimg} src={github} alt="github"/>
           </div>
+          
       </div>
       
       {/* proyecto numero cuatro */}
-      
+     </section>
     </section>
     </>
   );

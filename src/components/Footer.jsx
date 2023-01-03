@@ -11,7 +11,7 @@ import github from '../assets/icons/codeicon/004-github.png';
 const Footer = () => {
   return (
     <>
-    <div className={styles.footer}>TITULO DE FOOTER
+    <div className={styles.footer}>Want to see my code? 
         <div className={styles.socialmediacontainer}>
            <Link rel="stylesheet" href="https://github.com/Julianfam" ><Image src={github}alt="github"></Image> </Link>
 

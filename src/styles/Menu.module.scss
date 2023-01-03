@@ -18,7 +18,9 @@
 }
 .Menu ul li {
 	text-align: end;
+
 }
+
 .Menu ul li:nth-child(1),
 .Menu ul li:nth-child(2) {
 	font-weight: bold;
@@ -45,4 +47,8 @@
 	background-color: $--background-color;
 	margin: auto;
 	margin-bottom: 20px;
+}
+.Menu .linkmenuicons {
+
+	margin-left: 10px;
 }
