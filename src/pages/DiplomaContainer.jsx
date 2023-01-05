@@ -34,28 +34,28 @@ const DiplomaContainer = () => {
       Diplomas
     </Head>
     <section className={styles.contenedordiploma}>
-  <Image className={styles.diplomaimg} alt="diploma" src={diploma}/>;
-  <Image className={styles.diplomaimg} alt="diploma" src={diploma2}/>;
-  <Image className={styles.diplomaimg} alt="diploma" src={diploma3}/>;
-  <Image className={styles.diplomaimg} alt="diploma" src={diploma4}/>;
-  <Image className={styles.diplomaimg} alt="diploma" src={diploma5}/>;
-  <Image className={styles.diplomaimg} alt="diploma" src={diploma6}/>;
-  <Image className={styles.diplomaimg} alt="diploma" src={diploma7}/>;
-  <Image className={styles.diplomaimg} alt="diploma" src={diploma8}/>;
-  <Image className={styles.diplomaimg} alt="diploma" src={diploma9}/>;
-  <Image className={styles.diplomaimg} alt="diploma" src={diploma10}/>;
-  <Image className={styles.diplomaimg} alt="diploma" src={diploma11}/>;
-  <Image className={styles.diplomaimg} alt="diploma" src={diploma12}/>;
-  <Image className={styles.diplomaimg} alt="diploma" src={diploma13}/>;
-  <Image className={styles.diplomaimg} alt="diploma" src={diploma14}/>;
-  <Image className={styles.diplomaimg} alt="diploma" src={diploma15}/>;
-  <Image className={styles.diplomaimg} alt="diploma" src={diploma16}/>;
-  <Image className={styles.diplomaimg} alt="diploma" src={diploma17}/>;
-  <Image className={styles.diplomaimg} alt="diploma" src={diploma18}/>;
-  <Image className={styles.diplomaimg} alt="diploma" src={diploma19}/>;
-  <Image className={styles.diplomaimg} alt="diploma" src={diploma20}/>;
-  <Image className={styles.diplomaimg} alt="diploma" src={diploma21}/>;
-  <Image className={styles.diplomaimg} alt="diploma" src={diplomad22}/>;
+  <Image className={styles.diplomaimg} alt="diploma" src={diploma}/>
+  <Image className={styles.diplomaimg} alt="diploma" src={diploma2}/>
+  <Image className={styles.diplomaimg} alt="diploma" src={diploma3}/>
+  <Image className={styles.diplomaimg} alt="diploma" src={diploma4}/>
+  <Image className={styles.diplomaimg} alt="diploma" src={diploma5}/>
+  <Image className={styles.diplomaimg} alt="diploma" src={diploma6}/>
+  <Image className={styles.diplomaimg} alt="diploma" src={diploma7}/>
+  <Image className={styles.diplomaimg} alt="diploma" src={diploma8}/>
+  <Image className={styles.diplomaimg} alt="diploma" src={diploma9}/>
+  <Image className={styles.diplomaimg} alt="diploma" src={diploma10}/>
+  <Image className={styles.diplomaimg} alt="diploma" src={diploma11}/>
+  <Image className={styles.diplomaimg} alt="diploma" src={diploma12}/>
+  <Image className={styles.diplomaimg} alt="diploma" src={diploma13}/>
+  <Image className={styles.diplomaimg} alt="diploma" src={diploma14}/>
+  <Image className={styles.diplomaimg} alt="diploma" src={diploma15}/>
+  <Image className={styles.diplomaimg} alt="diploma" src={diploma16}/>
+  <Image className={styles.diplomaimg} alt="diploma" src={diploma17}/>
+  <Image className={styles.diplomaimg} alt="diploma" src={diploma18}/>
+  <Image className={styles.diplomaimg} alt="diploma" src={diploma19}/>
+  <Image className={styles.diplomaimg} alt="diploma" src={diploma20}/>
+  <Image className={styles.diplomaimg} alt="diploma" src={diploma21}/>
+  <Image className={styles.diplomaimg} alt="diploma" src={diplomad22}/>
   </section>
   </>
   );

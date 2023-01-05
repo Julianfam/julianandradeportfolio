@@ -7,9 +7,16 @@
      height: auto;
 
    .diplomaimg {
-    width: 200px;
+    width: 150px;
     height: auto;
     margin:  15px;
    }
 
+}
+@media (min-width:600px) {
+    .contenedordiploma .diplomaimg {
+        width: 300px;
+        height: auto;
+        margin:  15px;
+       }
 }
