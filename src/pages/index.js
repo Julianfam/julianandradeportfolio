@@ -19,8 +19,6 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
       <Profile />
-      
-      
       <Footer />
       </main>
     </>

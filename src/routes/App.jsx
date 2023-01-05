@@ -1,13 +1,14 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes, } from 'react-router-dom';
 import Layout from '@containers/layout.jsx';
-import Home from '@pages/Home.jsx';
-
+import Home from '@pages/index.jsx';
 import NotFound from '@pages/NotFound.jsx';
 import AppContext from '@context/AppContext';
 import useInitialState from '@hooks/useInitialState'; 
-import '@styles/global.scss';
 import Profile from '@components/Profile';
+import DiplomaContainer from '../pages/DiplomaContainer';
+
+import '@styles/global.scss';
 
 const App = () => {
     const initialState = useInitialState();
@@ -16,11 +17,12 @@ const App = () => {
             <BrowserRouter>
                 <Layout>
                     <Routes>
-                    <Route path="/" element={<Home/>} />
-
-                    <Route path="/profile" element={<Profile/>} /> 
-                    <Route path="*" element={<NotFound/>} /> 
-                </Routes> 
+                       
+                       <Route path="/profile" element={<Profile/>} /> 
+                       <Route path="/DiplomaContainer" element={<DiplomaContainer/>}/>
+                       <Route path="/" element={<Home/>} />
+                       <Route path="*" element={<NotFound/>} />       
+                    </Routes> 
                 </Layout>       
             </BrowserRouter>
         </AppContext.Provider>    
@@ -28,4 +30,6 @@ const App = () => {
 };
 
 export default App;
+
+
 
