@@ -2,7 +2,7 @@ import React from 'react';
 import styles from '@styles/profile.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
-import imgperfil from '../assets/img/pngjuliancamisablanca.png';
+import imgperfil from '../assets/img/IMG_1470_0038LOW.png';
 
 import html from '../assets/icons/codeicon/005-html-5.png';
 import css from '../assets/icons/codeicon/006-css-3.png';
