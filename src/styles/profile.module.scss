@@ -61,10 +61,12 @@
     min-width: 300px;
 	grid-template-columns: repeat(auto-fill, 50px);
     margin-bottom: 15px;
+    
     .skills {
         width: 30px;
         height: 30px;
         margin: 7px;
+        text-align: center;
     }
 }
 
@@ -105,6 +107,7 @@
         text-align: justify;
         margin: 10px;
         font-size: $--sm;
+        color: $--white;
     }
 
     .skillsProyectos {

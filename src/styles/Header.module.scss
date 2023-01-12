@@ -14,6 +14,7 @@
 	top: 0; /* posición del elemento en la parte superior de la pantalla */
 	width: 100%;
 	font-weight: 900;
+	
 
 }
 .menu {
@@ -54,7 +55,7 @@
 .navbar-left ul li a,
 .navbar-right ul li button {
 	text-decoration: none;
-	color: $--background-color;
+	color: $--complementary-color;
 	padding: 8px;
 	border-radius: 8px;
 }
