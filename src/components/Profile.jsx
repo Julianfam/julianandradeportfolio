@@ -91,6 +91,7 @@ const Profile = () => {
               <Image className={styles.skillsProyectoimg} src={html}alt="Html"/>
               <Image className={styles.skillsProyectoimg} src={css}alt="css"/>
           </div>
+          <button className ={styles.botoncontacto}> <Link href="https://bata-bit.vercel.app/">Visit me!</Link> </button>
       </div>
       
       {/* proyecto numero tres */}
