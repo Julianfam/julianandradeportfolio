@@ -17,7 +17,7 @@ import git from '../assets/icons/codeicon/Git_icon.svg.png';
 
 import projectimg1 from '../assets/img/portafolioProgramaciónWeb-02.jpg';
 import projectimg2 from '../assets/img/portafolioProgramaciónWeb-01.jpg';
-import projectimg3 from '../assets/img/image-3.jpg';
+import projectimg3 from '../assets/img/castellWeb.png';
 
 const Profile = () => {
 
@@ -97,10 +97,14 @@ const Profile = () => {
       <div className={styles.contenedorProyectos}>
           
             <div className={styles.proyectoImg}><Image src={projectimg3}alt="imageproyecto3"></Image></div>
-            <div className={styles.proyectoTitulo}>Personal Buisness Card</div>
-              <div className={styles.proyectoDescripcion}>Esto es un texto random sobre el presente proyecto,    
-                         la    idea es que esta imagen tenga un slider de imgs del proyecto            
-                                   info</div>
+            <div className={styles.proyectoTitulo}>Buisness Landing Page</div>
+              <div className={styles.proyectoDescripcion}>
+                Updating Main landig page for a managment company. New Web is Mobile Friendly and More accesible than before<br/><br/>
+                Javascript<br/><br/>
+                React<br/><br/>
+                Vercel<br/><br/>
+                Hooks          
+                                  </div>
           <div className={styles.skillsProyectos}>
               <Image className={styles.skillsProyectoimg} src={html} alt="Html"/>
               <Image className={styles.skillsProyectoimg} src={css} alt="css"/>
@@ -110,7 +114,7 @@ const Profile = () => {
               <Image className={styles.skillsProyectoimg} src={react} alt="react"/>
               <Image className={styles.skillsProyectoimg} src={github} alt="github"/>
           </div>
-          
+          <button className ={styles.botoncontacto}> <Link href="https://castell-asesores-web-3vnw.vercel.app/">Visit me!</Link> </button>
       </div>
       
       {/* proyecto numero cuatro */}
