@@ -3,26 +3,19 @@
 
 // profile
 .contenedorPerfil {
-    background-color: $--main-color;
+    background-color: $--background-color;
     width: 300px;
     height: auto;
-    border: 4px $--secondary-color solid;
+    border: 4px $--dark-blue solid;
     
     padding: 5px;
     margin-bottom: 50px;
     margin: 0 auto 0 auto;
-    // box shadow offset
-        -webkit-box-shadow: 0px 0px 38px 25px rgba(251,225,3,0.74);
-        -moz-box-shadow: 0px 0px 38px 25px rgba(251,225,3,0.74);
-        box-shadow: 0px 0px 38px 25px rgba(251,225,3,0.74);
-    // box shadow inset
-        -webkit-box-shadow: inset 0px 0px 19px 3px rgba(251,225,3,0.46);
-        -moz-box-shadow: inset 0px 0px 19px 3px rgba(251,225,3,0.46);
-        box-shadow: inset 0px 0px 19px 3px rgba(251,225,3,0.46);
+    
     .perfilNombre{    
         height: 50px;
         text-align: right;
-        color:  $--complementary-color;
+        color:  $--dark-blue;
         line-height: normal;
         padding: 12px 12px 0 0;  
     }
@@ -40,16 +33,19 @@
         height: 50px;
         text-align: right;
         padding: 12px 12px 0 0;
-        color:  $--complementary-color;
+        color:  $--dark-blue;
     }
    
+}
+.contenedorPerfil:hover {
+    box-shadow: 0px 9px 30px rgba(22, 5, 255, 0.3);
 }
 
 
 // skills
 
 .Titulo{
-    color: $--complementary-color;
+    color: $--dark-blue;
     text-align: center;
     margin: 15px;
     font-weight: 600;
@@ -76,7 +72,7 @@
 
 .contenedorProyectos {
     width: 300px;
-    border: 1px solid $--complementary-color;
+    border: 1 px solid $--dark-blue;
     
     margin: auto auto 35px auto;
     background-color: rgb(63, 63, 63);
@@ -91,7 +87,7 @@
         width: 290px;
         height: auto;
         margin: 5px;
-        background-color: $--complementary-color;
+        background-color: $--light-blue;
         img {
             width: 100%;
             height: auto;
@@ -101,13 +97,13 @@
 
     }
     .proyectoTitulo {
-        color: $--secondary-color;
+        color: $--light-blue;
         text-align: center;
     }
     .proyectoDescripcion {
         display: inline-block;
         text-align: justify;
-        margin: 10px;
+        margin: 20px;
         font-size: $--sm;
         color: $--white;
     }
@@ -121,10 +117,11 @@
     .botoncontacto{
         display: flex;
         justify-content: center;
-        margin: 0 auto;
+        margin: auto auto 0 auto;
+        
         margin-bottom: 10px;
         padding: 5px; 
-        background-color: $--complementary-color;
+        background-color: $--light-blue;
 
     }
 }

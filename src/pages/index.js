@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Profile from '@components/Profile';
-import Footer from '@components/Footer';
+
 
 import styles from '../styles/Home.module.css';
 
@@ -19,7 +19,6 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
       <Profile />
-      <Footer />
       </main>
     </>
   );

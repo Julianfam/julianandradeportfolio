@@ -5,20 +5,19 @@ import menu from '@icons/icon_menu.svg';
 import logo from '@logos/icon-192x192.png';
 import Menu from '@components/Menu';
 
+
 import Whatsapp from '../assets/icons/SocialMedia/007-whatsapp-1.png';
-
 import github from '../assets/icons/codeicon/004-github.png';
-
 import styles from '@styles/Header.module.scss';
 
 
 
 const Header = () => {
-
-	const [toggle2,setToggle2] = useState(false);
-
 	
 
+	const [toggle2,setToggle2] = useState(false);
+	
+	;
 	
 	
 	return (
@@ -51,6 +50,7 @@ const Header = () => {
 			</div>
 			
 			{toggle2 && <Menu />}
+			
 			
 		</nav>
 

@@ -1,8 +1,12 @@
 @import 'vars';
 
 .footer {
-    color: $--complementary-color;
+    color: $--dark-blue;
     font-weight: 700;
     text-align: center;
-    
+    .socialmediacontainer
+    {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }   
 }

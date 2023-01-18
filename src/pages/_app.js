@@ -1,14 +1,16 @@
 import Appcontext from '@context/AppContext';
 import useInitialState from '@hooks/useInitialState';
 import Header from '@components/header';
+import Footer from '@components/Footer';
 import Script from 'next/script';
-
 import '@styles/globals.scss';
 
 function MyApp({ Component, pageProps }) {
+
   const initialState = useInitialState();
   return (
-    <Appcontext.Provider value={initialState}>
+    <>
+      <Appcontext.Provider value={initialState}>
       <Script src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID" strategy="afterInteractive" />
       <Script id="google-analytics" strategy="afterInteractive">
         {`
@@ -21,7 +23,9 @@ function MyApp({ Component, pageProps }) {
       </Script>
       <Header />
       <Component {...pageProps} />
-    </Appcontext.Provider>
+      </Appcontext.Provider>
+      <Footer />
+    </>
   );
 }
 
