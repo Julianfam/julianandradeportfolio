@@ -30,11 +30,16 @@ const Profile = () => {
 
     {/* Profile Card */}
       <div className={styles.contenedorPerfil}>
-          <div className={styles.perfilNombre}>JULIAN ANDRADE </div>
-          <div className={styles.PerfilFoto}>
-            <Image className={styles.PerfilFotoImg}src={imgperfil}alt="profileimage"></Image>
-          </div>
-          <div className={styles.PerfilProfesion}>JAVASCRIPT DEVELOPER</div>
+        <div className={styles.greetings}>
+          <div className={styles.perfilNombre}><h1>HOLA Soy JULIAN ANDRADE </h1></div>
+          <br />
+          <div className={styles.PerfilProfesion}><h3>Diseñando a traves de la programación</h3></div>
+
+        </div>
+        <div className={styles.PerfilFoto}>
+          <Image className={styles.PerfilFotoImg}src={imgperfil}alt="profileimage"></Image>
+        </div>
+          
       </div>  
 
 

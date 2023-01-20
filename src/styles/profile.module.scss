@@ -4,37 +4,51 @@
 // profile
 .contenedorPerfil {
     background-color: $--background-color;
-    width: 300px;
+    width: 320px;
     height: auto;
-    border: 4px $--dark-blue solid;
-    
+    display: inline-flex;    
+    flex-direction: column;
     padding: 5px;
+    justify-content: space-around;
     margin-bottom: 50px;
-    margin: 0 auto 0 auto;
     
-    .perfilNombre{    
+    
+    .greetings{
+        text-align: left;
+        width: 300px;
+        margin-left: 15px;
+        .perfilNombre{    
         height: 50px;
-        text-align: right;
+        text-align: left;
+        margin-top: 10vh;
         color:  $--dark-blue;
         line-height: normal;
-        padding: 12px 12px 0 0;  
+        padding: 12px 12px 0 0; 
+    }
+     .PerfilProfesion{
+        
+        height: 50px;
+        text-align: left;
+        padding: 12px 12px 0 0;
+        color:  $--dark-blue;
+        margin-bottom: 15px;
+        
+    }
     }
     .PerfilFoto{
         height: 300px;
+        max-width: 400px;
+        margin-bottom: 15px;
+        
         .PerfilFotoImg {
             width: auto;
             height: 100%;
-            margin-left: auto;
             display: flex;
+            margin-left: 15px;
+            
         }
     }
-    .PerfilProfesion{
-        
-        height: 50px;
-        text-align: right;
-        padding: 12px 12px 0 0;
-        color:  $--dark-blue;
-    }
+    
    
 }
 .contenedorPerfil:hover {
@@ -72,10 +86,9 @@
 
 .contenedorProyectos {
     width: 300px;
-    border: 1 px solid $--dark-blue;
-    
     margin: auto auto 35px auto;
-    background-color: rgb(63, 63, 63);
+    background-color: $--very-light-pink;
+    padding-bottom: 1px;
     
     .Titulo {
         margin: 10px;
@@ -97,7 +110,7 @@
 
     }
     .proyectoTitulo {
-        color: $--light-blue;
+        color: $--dark-blue;
         text-align: center;
     }
     .proyectoDescripcion {
@@ -105,7 +118,7 @@
         text-align: justify;
         margin: 20px;
         font-size: $--sm;
-        color: $--white;
+        color: $--dark-blue;
     }
 
     .skillsProyectos {
@@ -116,19 +129,30 @@
     }
     .botoncontacto{
         display: flex;
+        width: 100px;
         justify-content: center;
-        margin: auto auto 0 auto;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
         
-        margin-bottom: 10px;
         padding: 5px; 
         background-color: $--light-blue;
+        border: none;
+        border-radius: 25px;
 
     }
 }
 
 @media (min-width: 600px) {
+    .contenedorPerfil {
+        flex-direction: row;
+        margin-right: auto;
+        width: 100%;
+        
+    }
     .contenedorProyectos {
-     margin-top: 0%;
+     
      margin: 10px 20px 20px 20px;
     }
     .allproyectcontainer {
