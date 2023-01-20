@@ -14,7 +14,7 @@ import react from '../assets/icons/codeicon/003-physics.png';
 import vercel from '../assets/icons/codeicon/vercel.png';
 import git from '../assets/icons/codeicon/Git_icon.svg.png';
 
-
+import projectunder from  '../assets/img/underConstruction.png';
 import projectimg1 from '../assets/img/portafolioProgramaciónWeb-02.jpg';
 import projectimg2 from '../assets/img/portafolioProgramaciónWeb-01.jpg';
 import projectimg3 from '../assets/img/castellWeb.png';
@@ -26,6 +26,7 @@ const Profile = () => {
 
   return (
     <>
+
     <section>
 
     {/* Profile Card */}
@@ -63,9 +64,30 @@ const Profile = () => {
 
       {/* Proyect Card */}
   <div className={styles.Titulo}>Proyects</div>
+   <section className={styles.allproyectcontainer}>
+  {/* proyecto Nuevo  */}
+
+ 
+
+      <div className={styles.contenedorProyectos}>
+    
+      <div className={styles.proyectoImg}><Image src=   {projectunder}alt="imageproyecto"></Image></div>
+      <div className={styles.proyectoTitulo}>Gallery Landing Page</div>
+        <div className={styles.proyectoDescripcion}>This landing page is image oriented.          
+                             info</div>
+     <div className={styles.skillsProyectos}>
+        <Image className={styles.skillsProyectoimg} src={html} alt="Html"/>
+        <Image className={styles.skillsProyectoimg} src={css} alt="Css"/>
+        <Image className={styles.skillsProyectoimg} src={api} alt="api"/>
+        <Image className={styles.skillsProyectoimg} src={react} alt="react"/>
+        <Image className={styles.skillsProyectoimg} src={github} alt="github"/>
+    </div>
+    <button className ={styles.botoncontacto}> <Link href="https://nextstorejs.vercel.app">Visit me!</Link> </button>
+    
+</div>
       {/* proyecto numero uno  */}
 
-    <section className={styles.allproyectcontainer}>
+    
 
       <div className={styles.contenedorProyectos}>
           
