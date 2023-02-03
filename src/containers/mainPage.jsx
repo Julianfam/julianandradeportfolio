@@ -5,9 +5,10 @@ import ProyectCardContainer from '@components/ProyectCardContainer';
 
 
 
+
 // importar de forma global todos los files, para poder usarlo en cualquier seccio
 
-const mainPage = () => {
+const MainPage = () => {
   return (
     <>
     <ProfileContainer />
@@ -15,7 +16,7 @@ const mainPage = () => {
     <ProyectCardContainer />
     
     </>
-  )
-}
+  );
+};
 
-export default mainPage
+export default MainPage;

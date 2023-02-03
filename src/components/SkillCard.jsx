@@ -1,5 +1,6 @@
 import React from 'react';
-import styles from '../styles/SkillCard.modules.scss';
+import styles from '../styles/SkillCard.module.scss';
+import Image from 'next/image';
 
 import html from '@icons/codeicon/005-html-5.png';
 import css from '@icons/codeicon/006-css-3.png';
@@ -27,7 +28,6 @@ const SkillCard = () => {
           <div className={styles.skills}><Image className={styles.skillsimg} src={vercel}  alt="vercel"width={30} height={30} /></div>
     </div>
 </setion>
-  )
-}
-
-export default SkillCard
+  );
+};
+export default SkillCard;

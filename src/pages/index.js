@@ -1,6 +1,5 @@
 import Head from 'next/head';
-import Profile from '@components/Profile';
-
+import MainPage from '../containers/mainpage';
 
 import styles from '../styles/Home.module.css';
 
@@ -18,7 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-      <Profile />
+      <MainPage />
       </main>
     </>
   );

@@ -1,9 +1,14 @@
 import React from 'react';
-import '@styles/ProyectCardContainer.modules.scss';
+import Image from 'next/image';
+import Link from 'next/link';
+
+import styles from '@styles/ProyectCardContainer.module.scss';
+
 import projectunder from  '@img/underConstruction.png';
 import projectimg1 from '@img/portafolioProgramaciónWeb-02.jpg';
 import projectimg2 from '@img/portafolioProgramaciónWeb-01.jpg';
 import projectimg3 from '@img/castellWeb.png';
+
 
 import html from '@icons/codeicon/005-html-5.png';
 import css from '@icons/codeicon/006-css-3.png';
@@ -35,6 +40,8 @@ const ProyectCardContainer = () => {
          <Image className={styles.skillsProyectoimg} src={api} alt="api"/>
          <Image className={styles.skillsProyectoimg} src={react} alt="react"/>
          <Image className={styles.skillsProyectoimg} src={github} alt="github"/>
+         <Image className={styles.skillsProyectoimg} src={node} alt="node"/>
+         <Image className={styles.skillsProyectoimg} src={js} alt="javascript"/>
      </div>
      <button className ={styles.botoncontacto}> <Link href="https://nextstorejs.vercel.app">Visit me!</Link> </button>
      
@@ -102,7 +109,7 @@ const ProyectCardContainer = () => {
        {/* proyecto numero cuatro */}
       </section>
      </>
-  )
-}
+  );
+};
 
-export default ProyectCardContainer
+export default ProyectCardContainer;
