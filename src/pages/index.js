@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import MainPage from '../containers/mainpage';
+import MainPage from '../containers/MainPage';
 
 import styles from '../styles/Home.module.css';
 
