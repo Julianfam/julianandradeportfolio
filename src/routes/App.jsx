@@ -7,6 +7,7 @@ import AppContext from '@context/AppContext';
 import useInitialState from '@hooks/useInitialState'; 
 import Profile from '@components/Profile';
 import DiplomaContainer from '../pages/DiplomaContainer';
+import mainPage from '@containers/mainPage';
 
 import '@styles/global.scss';
 
@@ -18,6 +19,7 @@ const App = () => {
                 <Layout>
                     <Routes>
                        
+                       <Route path="/mainpage" element={<mainPage/>} /> 
                        <Route path="/profile" element={<Profile/>} /> 
                        <Route path="/DiplomaContainer" element={<DiplomaContainer/>}/>
                        <Route path="/" element={<Home/>} />

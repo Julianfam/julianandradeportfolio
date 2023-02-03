@@ -4,20 +4,20 @@ import Link from 'next/link';
 import Image from 'next/image';
 import imgperfil from '../assets/img/IMG_1470_0038LOW.png';
 
-import html from '../assets/icons/codeicon/005-html-5.png';
-import css from '../assets/icons/codeicon/006-css-3.png';
-import node from '../assets/icons/codeicon/002-node-js.png';
-import js from '../assets/icons/codeicon/001-js.png';
-import github from '../assets/icons/codeicon/004-github.png';
-import api from '../assets/icons/codeicon/007-api.png';
-import react from '../assets/icons/codeicon/003-physics.png';
-import vercel from '../assets/icons/codeicon/vercel.png';
-import git from '../assets/icons/codeicon/Git_icon.svg.png';
+import html from '@icons/codeicon/005-html-5.png';
+import css from '@icons/codeicon/006-css-3.png';
+import node from '@icons/codeicon/002-node-js.png';
+import js from '@icons/codeicon/001-js.png';
+import github from '@icons/codeicon/004-github.png';
+import api from '@icons/codeicon/007-api.png';
+import react from '@icons/codeicon/003-physics.png';
+import vercel from '@icons/codeicon/vercel.png';
+import git from '@icons/codeicon/Git_icon.svg.png';
 
-import projectunder from  '../assets/img/underConstruction.png';
-import projectimg1 from '../assets/img/portafolioProgramaciónWeb-02.jpg';
-import projectimg2 from '../assets/img/portafolioProgramaciónWeb-01.jpg';
-import projectimg3 from '../assets/img/castellWeb.png';
+import projectunder from  '@img/underConstruction.png';
+import projectimg1 from '@img/portafolioProgramaciónWeb-02.jpg';
+import projectimg2 from '@img/portafolioProgramaciónWeb-01.jpg';
+import projectimg3 from '@img/castellWeb.png';
 
 const Profile = () => {
 
@@ -32,7 +32,7 @@ const Profile = () => {
     {/* Profile Card */}
       <div className={styles.contenedorPerfil}>
         <div className={styles.greetings}>
-          <div className={styles.perfilNombre}><h1>HOLA Soy JULIAN ANDRADE </h1></div>
+          <div className={styles.perfilNombre}><h1>hola soy JULIAN ANDRADE </h1></div>
           <br />
           <div className={styles.PerfilProfesion}><h3>Diseñando a traves de la programación</h3></div>
 

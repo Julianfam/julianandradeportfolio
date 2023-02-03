@@ -1,0 +1,61 @@
+// proyects
+
+.contenedorProyectos {
+    width: 300px;
+    margin: auto auto 35px auto;
+    background-color: $--very-light-pink;
+    padding-bottom: 1px;
+    
+    .Titulo {
+        margin: 10px;
+    }
+    
+    
+    .proyectoImg {
+        display: inline-block;
+        width: 290px;
+        height: auto;
+        margin: 5px;
+        background-color: $--light-blue;
+        img {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            
+        }
+
+    }
+    .proyectoTitulo {
+        color: $--dark-blue;
+        text-align: center;
+    }
+    .proyectoDescripcion {
+        display: inline-block;
+        text-align: justify;
+        margin: 20px;
+        font-size: $--sm;
+        color: $--dark-blue;
+    }
+
+    .skillsProyectos {
+        margin: 5px;
+        .skillsProyectoimg {
+            margin-left: 10px;
+        }
+    }
+    .botoncontacto{
+        display: flex;
+        width: 100px;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        
+        padding: 5px; 
+        background-color: $--light-blue;
+        border: none;
+        border-radius: 25px;
+
+    }
+}

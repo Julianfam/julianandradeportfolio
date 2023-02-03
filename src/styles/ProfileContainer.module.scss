@@ -1,0 +1,53 @@
+.contenedorPerfil {
+    background-color: $--background-color;
+    width: 320px;
+    height: auto;
+    display: inline-flex;    
+    flex-direction: column;
+    padding: 5px;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    
+    
+    .greetings{
+        text-align: left;
+        width: 300px;
+        margin-left: 15px;
+        .perfilNombre{    
+        height: 50px;
+        text-align: left;
+        margin-top: 10vh;
+        color:  $--dark-blue;
+        line-height: normal;
+        padding: 12px 12px 0 0; 
+    }
+     .PerfilProfesion{
+        
+        height: 50px;
+        text-align: left;
+        padding: 12px 12px 0 0;
+        color:  $--dark-blue;
+        margin-bottom: 15px;
+        
+    }
+    }
+    .PerfilFoto{
+        height: 300px;
+        max-width: 400px;
+        margin-bottom: 15px;
+        
+        .PerfilFotoImg {
+            width: auto;
+            height: 100%;
+            display: flex;
+            margin-left: 15px;
+            
+        }
+    }
+    
+   
+}
+.contenedorPerfil:hover {
+    box-shadow: 0px 9px 30px rgba(22, 5, 255, 0.3);
+}
+

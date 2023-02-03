@@ -1,0 +1,35 @@
+@media (min-width: 600px) {
+    .contenedorPerfil {
+        flex-direction: row;
+        margin-right: auto;
+        width: 100%;
+        
+    }
+    .allproyectcontainer {
+    display: grid;
+    width: 700px;
+	grid-template-columns: repeat(auto-fill, 300px);
+    grid-template-rows: repeat(auto-fill, minmax(340px, 1fr));
+	gap: 5px;
+	place-content: center;
+	margin: 3em 0 0 0;
+    height: auto;
+
+    justify-content: center;
+    align-content: center;
+
+    }
+    .contenedorProyectos {
+        
+        margin: 10px 20px 20px 20px;
+    }
+    
+    .habilidadesPersonales {
+        min-width: 400px;
+    }
+    
+}
+@media (min-width: 920px) {
+    .allproyectcontainer {
+        width: 920px;
+}}

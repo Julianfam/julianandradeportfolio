@@ -8,6 +8,7 @@
             "@containers/*": [ "containers/*" ],
             "@icons/*": [ "assets/icons/*" ],
             "@logos/*": [ "assets/logos/*" ],
+            "@img/*": ["assets/img/*"],
             "@context/*": [ "context/*" ],
             "@styles/*": [ "styles/*" ],
             "@hooks/*": [ "hooks/*" ],
