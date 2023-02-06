@@ -7,9 +7,9 @@ const ProfileContainer = () => {
   return (
     <div className={styles.contenedorPerfil}>
         <div className={styles.greetings}>
-            <div className={styles.perfilNombre}><h1>Hola soy <br/> JULIAN ANDRADE </h1></div>
+            <div className={styles.perfilNombre}><h1>Hi im <br/> JULIAN ANDRADE </h1></div>
                 <br />
-                    <div className={styles.PerfilProfesion}><h3>Diseño a través de la programación</h3></div>
+                    <div className={styles.PerfilProfesion}><h3>designing through programming</h3></div>
 
                     </div>
                 <div className={styles.PerfilFoto}>
