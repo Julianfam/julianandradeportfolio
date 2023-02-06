@@ -7,7 +7,7 @@ import AppContext from '@context/AppContext';
 import useInitialState from '@hooks/useInitialState'; 
 import Profile from '@components/Profile';
 import DiplomaContainer from '../pages/DiplomaContainer';
-import MainPage from '@containers/MainPage';
+import MainPage from 'pages/MainPage';
 
 import '@styles/global.scss';
 
