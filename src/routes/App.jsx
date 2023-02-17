@@ -9,6 +9,7 @@ import Profile from '@components/Profile';
 import DiplomaContainer from '../pages/DiplomaContainer';
 import MainPage from 'pages/MainPage';
 
+
 import '@styles/global.scss';
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
                        <Route path="/mainpage" element={<MainPage/>} /> 
                        <Route path="/profile" element={<Profile/>} /> 
                        <Route path="/DiplomaContainer" element={<DiplomaContainer/>}/>
+                       <Route path="/cheatlist" element={<cheatlist />} />
                        <Route path="/" element={<Home/>} />
                        <Route path="*" element={<NotFound/>} />       
                     </Routes> 

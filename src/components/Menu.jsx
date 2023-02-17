@@ -20,8 +20,13 @@ const Menu = () => {
 							
 				<li> 
 						<Link className="linkmenuicons" href="/DiplomaContainer" >Certifications <Image  className="contactmenuicons"  src={Mail} alt="Mail" width={16} height={16}></Image></Link>
-			</li><li> 
+				</li>
+				<li> 
 						<Link className="linkmenuicons" href="https://github.com/Julianfam">My Github <Image className="contactmenuicons" src={github} alt="github"  width={16} height={16}></Image></Link>
+						
+				</li>
+				<li> 
+						<Link className="linkmenuicons" href="/cheatlist">My Cheat List <Image className="contactmenuicons"  alt="cheatlist"  width={16} height={16}></Image></Link>
 						
 				</li>
 				<li>  

@@ -32,7 +32,10 @@ const Header = () => {
 				<ul>
 					<li>
 						<Link href="/DiplomaContainer">Diplomas</Link>
-					</li>			
+					</li>
+					<li>
+						<Link href="/cheatlist">Cheat List</Link>
+					</li>					
 					<li>
 						<Link href="https://wa.me/573202502648"><Image className="contactmenuicons" src={Whatsapp} alt="whatsapp" width={16} height={16}></Image></Link>
 						<Link href="https://github.com/Julianfam"><Image className="contactmenuicons" src={github} alt="github" width={16} height={16}></Image></Link>

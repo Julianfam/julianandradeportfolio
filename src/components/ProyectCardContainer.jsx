@@ -92,6 +92,7 @@ const ProyectCardContainer = () => {
                  Javascript<br/><br/>
                  React<br/><br/>
                  Vercel<br/><br/>
+                 Emailjs<br/><br/>
                  Hooks          
                                    </div>
            <div className={styles.skillsProyectos}>
