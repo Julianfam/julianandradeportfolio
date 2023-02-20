@@ -26,7 +26,7 @@ const cheatlist = () => {
             <li>tailwindcss.com : Css Framework</li>
             <li>ui-avatars.com : Generate letter avatar with names</li>
             <li>Chartjs.org : Dinamic chart templates</li>
-            <li></li>
+            <li>https://app.tailwinduikit.com/ : Tailwind UI kit Components up to 250 free. </li>
         </ul>
 
     </section>
