@@ -11,6 +11,8 @@ import api from '@icons/codeicon/007-api.png';
 import react from '@icons/codeicon/003-physics.png';
 import vercel from '@icons/codeicon/vercel.png';
 import git from '@icons/codeicon/Git_icon.svg.png';
+import nextjs from '@icons/codeicon/Nextjs-logo.svg';
+import tailwind from '@icons/codeicon/Tailwind_CSS_Logo.svg';
 
 const SkillCard = () => {
   return (
@@ -26,6 +28,8 @@ const SkillCard = () => {
           <div className={styles.skills}><Image className={styles.skillsimg} src={git} alt="git" width={30} height={30} /></div>
           <div className={styles.skills}><Image className={styles.skillsimg} src={github} alt="github"/></div>
           <div className={styles.skills}><Image className={styles.skillsimg} src={vercel}  alt="vercel"width={30} height={30} /></div>
+          <div className={styles.skills}><Image className={styles.skillsimg} src={nextjs}  alt="nextjs"width={30} height={30} /></div>
+          <div className={styles.skills}><Image className={styles.skillsimg} src={tailwind}  alt="tailwind"width={30} height={30} /></div>
     </div>
 </setion>
   );
