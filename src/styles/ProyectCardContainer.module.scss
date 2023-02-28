@@ -1,11 +1,18 @@
 // proyects
 @import '@styles/_vars.scss';
 
+.Titulo {
+    text-align: center;
+    margin: 35px;
+    font-size: large;
+}
+
 .contenedorProyectos {
     width: 300px;
     margin: auto auto 35px auto;
-    background-color: $--very-light-pink;
-    padding-bottom: 1px;
+    background-color: $--dark-beige;
+    padding: 2px 0px 2px 0px;
+    border-radius: 5px;
     
     .Titulo {
         margin: 10px;

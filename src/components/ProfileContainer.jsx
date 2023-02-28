@@ -9,7 +9,10 @@ const ProfileContainer = () => {
         <div className={styles.greetings}>
             <div className={styles.perfilNombre}><h1>Hi im <br/> JULIAN ANDRADE </h1></div>
                 <br />
-                    <div className={styles.PerfilProfesion}><h3>designing through programming</h3></div>
+                    <div className={styles.PerfilProfesion}><h3>designing through programming
+                        <br /><br />
+                        Javascript Programmer
+                        </h3></div>
 
                     </div>
                 <div className={styles.PerfilFoto}>

@@ -22,7 +22,7 @@ import git from '@icons/codeicon/Git_icon.svg.png';
 
 const ProyectCardContainer = () => {
   return (
-    <>  <div className={styles.Titulo}>Proyects</div>
+    <>  <div className={styles.Titulo}><h1>Proyects</h1></div>
     <section className={styles.allproyectcontainer}>
    {/* proyecto Nuevo  */}
  

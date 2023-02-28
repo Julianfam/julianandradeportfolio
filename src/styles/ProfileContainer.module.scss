@@ -1,7 +1,7 @@
 @import '@styles/_vars.scss';
 
 .contenedorPerfil {
-    background-color: $--background-color;
+    background-color: $--light-beige;
     width: 320px;
     height: auto;
     display: inline-flex;    
@@ -56,9 +56,7 @@
     
    
 }
-.contenedorPerfil:hover {
-    box-shadow: 0px 9px 30px rgba(22, 5, 255, 0.3);
-}
+
 
 @media (min-width: 600px) {
     .contenedorPerfil {

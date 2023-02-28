@@ -9,7 +9,6 @@
 	background: transparent ;
 	width: 100%;
 	
-	background: linear-gradient(to bottom, rgba(3, 119, 251, 0.46), rgba(255, 255, 255, 0)); /* degradado de color blanco a transparente */
 	position: fixed; /* fija la posición del elemento en la pantalla */
 	top: 0; /* posición del elemento en la parte superior de la pantalla */
 	width: 100%;
@@ -55,7 +54,7 @@
 .navbar-left ul li a,
 .navbar-right ul li button {
 	text-decoration: none;
-	color: $--dark-blue;
+	color: $--dark-coffe;
 	padding: 8px;
 	border-radius: 8px;
 }
@@ -65,12 +64,12 @@
 	padding: 10px;
 }
 .navbar-right ul li div{
-	color: $--black;
+	color: $--dark-coffe;
 }
 .navbar-left ul li a:hover,
 .navbar-right ul button:hover {
-	border: 1px solid $--secondary-color;
-	color: $--secondary-color;
+	border: 1px solid $--dark-beige;
+	color: $--light-coffe;
 	border-radius: 8px;
 }
 .navbar-email {
@@ -84,7 +83,7 @@
 .navbar-shopping-cart div {
 	width: 16px;
 	height: 16px;
-	background-color: $--hospital-green;
+	
 	border-radius: 50%;
 	font-size: $--sm;
 	font-weight: bold;

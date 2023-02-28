@@ -1,7 +1,7 @@
 import React from 'react';
 import ProfileContainer from '@components/ProfileContainer';
 import SkillCard from '@components/SkillCard';
-import ProyectCardContainer from '@components/ProyectCardContainer';
+
 
 
 
@@ -13,7 +13,7 @@ const MainPage = () => {
     <>
     <ProfileContainer />
     <SkillCard />
-    <ProyectCardContainer />
+    {/* <ProyectCardContainer /> */}
     
     </>
   );

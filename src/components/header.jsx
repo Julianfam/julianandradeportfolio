@@ -31,7 +31,10 @@ const Header = () => {
 				</Link>
 				<ul>
 					<li>
-						<Link href="/DiplomaContainer">Diplomas</Link>
+						<Link href="/ProyectCardContainer">My Proyects</Link>
+					</li>
+					<li>
+						<Link href="/DiplomaContainer">My Diplomas</Link>
 					</li>
 					<li>
 						<Link href="/cheatlist">Cheat List</Link>

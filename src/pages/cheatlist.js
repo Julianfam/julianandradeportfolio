@@ -13,7 +13,6 @@ const cheatlist = () => {
             <li>MyDevice.io : device sizes</li>
             <li>Figma: Colaborative interface</li>
             <li>canIuse: Check devices compativility</li>
-
             <li>Yandex: Russian Google</li>
             <li>Css-tricks.com: Complete Guide Flexbox</li>
             <li>codepen.io : Portal to discover, build, test Front-end Code</li>
