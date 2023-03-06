@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import styles from '../styles/SkillCard.module.scss';
 import Image from 'next/image';
 
@@ -14,24 +14,39 @@ import git from '@icons/codeicon/Git_icon.svg.png';
 import nextjs from '@icons/codeicon/Nextjs-logo.svg';
 import tailwind from '@icons/codeicon/Tailwind_CSS_Logo.svg';
 
-const SkillCard = () => {
+
+import React from 'react';
+
+const images = [
+  { id: 1, src: html, alt: 'Html' },
+  { id: 2, src: css, alt: 'Css' },
+  { id: 3, src: node, alt: 'Node' },
+  { id: 4, src: js, alt: 'JS' },
+  { id: 5, src: react, alt: 'React' },
+  { id: 6, src: api, alt: 'Api' },
+  { id: 7, src: git, alt: 'Git' },
+  { id: 8, src: github, alt: 'Github' },
+  { id: 9, src: vercel, alt: 'Vercel' },
+  { id: 10, src: nextjs, alt: 'Nextjs' },
+  { id: 11, src: tailwind, alt: 'Tailwind' }
+];
+
+function SkillCard() {
   return (
-    <setion className={styles.contenedorHabilidades}>
-    <div className={styles.Titulo}>Tech Skills</div>
-    <div className={styles.habilidadesPersonales}>
-          <div className={styles.skills}><Image className={styles.skillsimg} src={html} alt="Html"/></div>
-          <div className={styles.skills}><Image className={styles.skillsimg} src={css} alt="css"/></div>
-          <div className={styles.skills}><Image className={styles.skillsimg} src={node} alt="node"/></div>
-          <div className={styles.skills}><Image className={styles.skillsimg} src={js} alt="js"/></div>
-          <div className={styles.skills}><Image className={styles.skillsimg} src={react} alt="react"/></div>
-          <div className={styles.skills}><Image className={styles.skillsimg} src={api} alt="api"/></div>
-          <div className={styles.skills}><Image className={styles.skillsimg} src={git} alt="git" width={30} height={30} /></div>
-          <div className={styles.skills}><Image className={styles.skillsimg} src={github} alt="github"/></div>
-          <div className={styles.skills}><Image className={styles.skillsimg} src={vercel}  alt="vercel"width={30} height={30} /></div>
-          <div className={styles.skills}><Image className={styles.skillsimg} src={nextjs}  alt="nextjs"width={30} height={30} /></div>
-          <div className={styles.skills}><Image className={styles.skillsimg} src={tailwind}  alt="tailwind"width={30} height={30} /></div>
-    </div>
-</setion>
+    <section className={styles.contenedorHabilidades}>
+      <div className={styles.Titulo}>Tech Skills</div>
+        <div className={styles.habilidadesPersonales}>
+              
+                {images.map((image) => (
+                  <> <Image key={image.id} src={image.src} alt={image.alt} className={styles.skills} width={30} height={30}
+                   />
+                   <h6>{image.alt}</h6>
+                  </>
+                ))}
+          
+      </div>
+    </section>
   );
-};
+}
+
 export default SkillCard;
