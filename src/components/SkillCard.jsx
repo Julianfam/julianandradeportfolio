@@ -38,10 +38,10 @@ function SkillCard() {
         <div className={styles.habilidadesPersonales}>
               
                 {images.map((image) => (
-                  <> <Image key={image.id} src={image.src} alt={image.alt} className={styles.skills} width={30} height={30}
+                  <div key={image.id}> <Image key={image.id} src={image.src} alt={image.alt} className={styles.skills} width={30} height={30}
                    />
-                   <h6>{image.alt}</h6>
-                  </>
+                   <h6 key={image.id}>{image.alt}</h6>
+                  </div>
                 ))}
           
       </div>
