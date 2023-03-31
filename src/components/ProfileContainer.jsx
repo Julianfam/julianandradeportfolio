@@ -11,12 +11,12 @@ const ProfileContainer = () => {
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setWordIndex((wordIndex + 1));
+      setWordIndex((wordIndex + 1) % words.length);
     }, 1000);
 
     return () => clearInterval(intervalId);
   }, [wordIndex]);
-
+  
   return (
     <div className={styles.contenedorPerfil}>
         <div className={styles.greetings}>
