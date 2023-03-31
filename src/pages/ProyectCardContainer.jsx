@@ -31,9 +31,18 @@ const ProyectCardContainer = () => {
        <div className={styles.contenedorProyectos}>
      
        <div className={styles.proyectoImg}><Image src=   {projectunder}alt="imageproyecto"></Image></div>
-       <div className={styles.proyectoTitulo}>Gallery Landing Page</div>
-         <div className={styles.proyectoDescripcion}>This landing page is image oriented.          
-                              info</div>
+       <div className={styles.proyectoTitulo}>Functional DashBoard</div>
+         <div className={styles.proyectoDescripcion}>This Dashboard have diferente functionalities          
+                              <br />
+                              Dasboard<br />
+                              Login <br />
+                              Logout <br />
+                              Cookies <br />
+                              API managment <br />
+                              
+                              
+                              
+                              </div>
       <div className={styles.skillsProyectos}>
          <Image className={styles.skillsProyectoimg} src={html} alt="Html"/>
          <Image className={styles.skillsProyectoimg} src={css} alt="Css"/>

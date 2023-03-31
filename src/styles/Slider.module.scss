@@ -5,12 +5,30 @@
     height: auto;
     background-color: $--white;
 
-    .imagenSlider {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
+    // .imagenSlider {
+    //     width: 100%;
+    //     height: auto;
+    //     object-fit: cover;
 
-    }
+    // }
 
 }
+.imageSlider {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: bounce 1s infinite;
+      }
 
+ @keyframes bounce {
+        0% {
+          transform: translate(-50%, -50%);
+        }
+        50% {
+          transform: translate(-50%, -70%);
+        }
+        100% {
+          transform: translate(-50%, -50%);
+        }
+      }
