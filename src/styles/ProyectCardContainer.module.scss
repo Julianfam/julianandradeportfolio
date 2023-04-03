@@ -1,6 +1,7 @@
 // proyects
 @import '@styles/_vars.scss';
 
+
 .Titulo {
     text-align: center;
     margin: 35px;
@@ -10,7 +11,7 @@
 .contenedorProyectos {
     width: 300px;
     margin: auto auto 35px auto;
-    background-color: $--dark-beige;
+    background-color: $--background-color;
     padding: 2px 0px 2px 0px;
     border-radius: 5px;
     
@@ -24,7 +25,7 @@
         width: 290px;
         height: auto;
         margin: 5px;
-        background-color: $--light-blue;
+        background-color: $--complementary-color;
         img {
             width: 100%;
             height: auto;
@@ -34,7 +35,7 @@
 
     }
     .proyectoTitulo {
-        color: $--dark-blue;
+        color: $--main-color;
         text-align: center;
     }
     .proyectoDescripcion {
@@ -42,7 +43,7 @@
         text-align: justify;
         margin: 20px;
         font-size: $--sm;
-        color: $--dark-blue;
+        color: $--main-color;
     }
 
     .skillsProyectos {
@@ -61,9 +62,10 @@
         margin-bottom: 30px;
         
         padding: 5px; 
-        background-color: $--light-blue;
+        background-color: $--complementary-color;
         border: none;
         border-radius: 25px;
+        color: $--background-color;
 
     }
 }

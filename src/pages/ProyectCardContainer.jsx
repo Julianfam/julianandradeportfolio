@@ -62,7 +62,7 @@ const ProyectCardContainer = () => {
  
        <div className={styles.contenedorProyectos}>
            
-             <div className={styles.proyectoImg}><Image src={projectimg1}alt="imageproyecto"></Image></div>
+             <div className={styles.proyectoImg}><Image src={projectimg1}alt="imageproyectoecomerce"></Image></div>
              <div className={styles.proyectoTitulo}>E-commerce Shopping cart</div>
                <div className={styles.proyectoDescripcion}>This ecommerce website design is developed in React and NextJS, and features a functional shopping cart that allows users to easily add and remove products from their cart. The user interface is user-friendly and easy to use, and navigation is intuitive for users to easily find the products they are looking for. Additionally, the page loads quickly and is secure, ensuring a pleasant shopping experience for users.          
                                     info</div>

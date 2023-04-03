@@ -54,9 +54,12 @@
 .navbar-left ul li a,
 .navbar-right ul li button {
 	text-decoration: none;
-	color: $--dark-coffe;
+	color:  $--background-color;
 	padding: 8px;
 	border-radius: 8px;
+}
+.navbar-right ul li button {
+	border: 1px solid $--background-color;
 }
 .navbar-email, .navbar-shopping-cart{
 	background-color: transparent;
@@ -64,12 +67,12 @@
 	padding: 10px;
 }
 .navbar-right ul li div{
-	color: $--dark-coffe;
+	color:  $--background-color;
 }
 .navbar-left ul li a:hover,
 .navbar-right ul button:hover {
-	border: 1px solid $--dark-beige;
-	color: $--light-coffe;
+	border: 1px solid  $--secondary-color;
+	color:  $--complementary-color;
 	border-radius: 8px;
 }
 .navbar-email {
@@ -93,7 +96,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color:$--black;
+	color: $--background-color;
 }
 @media (max-width: 640px) {
 	.Nav .nav-logo{

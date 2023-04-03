@@ -1,7 +1,7 @@
 @import '@styles/_vars.scss';
 
 .contenedorPerfil {
-    background-color: $--light-beige;
+    background-color:  $--main-color;
     width: 320px;
     height: auto;
     display: inline-flex;    
@@ -16,7 +16,7 @@
         text-align: left;
         width: 300px;
         margin-left: 15px;
-        color:  $--dark-blue;
+        color:  $--background-color;
         
         
         .perfilNombre{    
@@ -25,7 +25,7 @@
         text-align: left;
         margin-top: 15px;
         margin-bottom: 10px;
-        color:  $--dark-blue;
+        color:  $--background-color;
         padding: 12px 12px 0 0; 
         
     }
@@ -34,7 +34,7 @@
         height: 50px;
         text-align: left;
         padding: 12px 12px 0 0;
-        color:  $--dark-blue;
+        color:  $--background-color;
         margin-top: auto;
         margin-bottom: 15px;
         .text {

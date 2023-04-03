@@ -1,7 +1,7 @@
 import React , { useState , useRef} from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import menu from '@icons/icon_menu.svg';
+import menu from '@icons/001-menu.png';
 import logo from '@logos/icon-192x192.png';
 import Menu from '@components/Menu';
 
@@ -49,7 +49,7 @@ const Header = () => {
 				<ul>
 					<button className={styles['navbar-shopping-cart']} 
 					onClick={() => setToggle2(!toggle2)} >
-						<Image src={menu} alt="Menu"  />
+						<Image src={menu} alt="Menu" width={30} height={30} />
 					</button>
 				</ul>
 			</div>
