@@ -15,7 +15,7 @@ const ProfileContainer = () => {
     }, 1000);
 
     return () => clearInterval(intervalId);
-  }, [wordIndex]);
+  }, [words.length , wordIndex]);
   
   return (
     <div className={styles.contenedorPerfil}>
