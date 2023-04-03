@@ -8,6 +8,7 @@ import projectunder from  '@img/underConstruction.png';
 import projectimg1 from '@img/portafolioProgramaciónWeb-02.jpg';
 import projectimg2 from '@img/portafolioProgramaciónWeb-01.jpg';
 import projectimg3 from '@img/castellWeb.png';
+import dashboard1 from '@img/dasboarimage.png'
 
 
 import html from '@icons/codeicon/005-html-5.png';
@@ -30,7 +31,7 @@ const ProyectCardContainer = () => {
  
        <div className={styles.contenedorProyectos}>
      
-       <div className={styles.proyectoImg}><Image src=   {projectunder}alt="imageproyecto"></Image></div>
+       <div className={styles.proyectoImg}><Image src=   {dashboard1}alt="imageproyecto"></Image></div>
        <div className={styles.proyectoTitulo}>Functional DashBoard</div>
          <div className={styles.proyectoDescripcion}>This Dashboard have diferente functionalities          
                               <br />
