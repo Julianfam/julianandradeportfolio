@@ -1,4 +1,4 @@
-import React , { useState , useRef} from 'react';
+import React , { useState , useRef , useEffect} from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import menu from '@icons/001-menu.png';
@@ -9,17 +9,29 @@ import Whatsapp from '../assets/icons/SocialMedia/007-whatsapp-1.png';
 import github from '../assets/icons/codeicon/004-github.png';
 import styles from '@styles/Header.module.scss';
 
-import useOutsideClick from '@hooks/useOutsideClick';
-
 const Header = () => {
 
 
 	const [toggle2,setToggle2] = useState(false);
-	const ref = useRef();
+	const ref = useRef(null);
 
-	useOutsideClick(ref, ()=>{
-		if (toggle2) setToggle2(false);
-	});
+	useEffect(() => {
+		// add event listener to document on mount
+		document.addEventListener("mousedown", handleClickOutside);
+		// remove event listener on unmount
+		return () => {
+			document.removeEventListener("mousedown", handleClickOutside);
+		};
+	}, []);
+
+	const handleClickOutside = (event) => {
+		if (ref.current && !ref.current.contains(event.target) && event.target.className !== styles['navbar-shopping-cart']) {
+			// if click is outside of the Menu component, close it
+			setToggle2(false);
+		}
+	};
+
+	
 
 	return (
 	
