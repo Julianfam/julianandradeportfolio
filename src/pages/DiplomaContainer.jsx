@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Head from 'next/head';
 import styles from '../styles/diplomascontainer.module.scss';
 import Image from 'next/image';
 
-import diploma from '@img/Diplomas/diploma-asincronismo-js-1.png';
+
+import diploma1 from '@img/Diplomas/diploma-asincronismo-js-1.png';
 import diploma2 from '@img/Diplomas/diploma-basico-javascript-1.png';
 import diploma3 from '@img/Diplomas/diploma-css-grid-layout-1.png';
 import diploma4 from '@img/Diplomas/diploma-ecmascript-6-1.png';
@@ -25,13 +26,10 @@ import diploma19 from '@img/Diplomas/diploma-preprocesadores-1.png';
 import diploma20 from '@img/Diplomas/diploma-prework-windows-1.png';
 import diploma21 from '@img/Diplomas/diploma-react-practico-1.png';
 import diploma22 from '@img/Diplomas/diploma-webpack-1.png';
-
-
-
-
+// otras importaciones de diplomas aquí...
 
 const diplomas = [
-  { id: 1, src: diploma, alt: 'Html' },
+  { id: 1, src: diploma1, alt: 'Html' },
   { id: 2, src: diploma2, alt: 'Css' },
   { id: 3, src: diploma3, alt: 'Node' },
   { id: 4, src: diploma4, alt: 'JS' },
@@ -53,42 +51,84 @@ const diplomas = [
   { id: 20, src: diploma20, alt: 'Nextjs' },
   { id: 21, src: diploma21, alt: 'Tailwind' },
   { id: 22, src: diploma22, alt: 'Tailwind' }
+  // otros objetos de diplomas aquí...
 ];
 
-
 const DiplomaContainer = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 3;
+  const totalPages = Math.ceil(diplomas.length / itemsPerPage);
+
+  const handlePageClick = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+
+  const renderDiplomas = () => {
+    
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+    return diplomas.slice(startIndex, endIndex).map((diploma) => (
+      <>
+    
+      <div key={diploma.id}> 
+        <Image 
+          src={diploma.src} 
+          alt={diploma.alt} 
+          className={styles.diplomaimg} 
+        />
+        <h6>{diploma.alt}</h6>
+      </div>
+      </>
+    ));
+  };
+
+  const renderPagination = () => {
+    const pageNumbers = [];
+    for (let i = 1; i <= totalPages; i++) {
+      pageNumbers.push(i);
+    }
+
+    return (
+        <div className={styles.pagination}>
+          <button
+            onClick={() => handlePageClick(currentPage - 1)}
+            disabled={currentPage === 1}
+          >
+            Anterior
+          </button>
+          {pageNumbers.map((pageNumber) => (
+            <span
+              key={pageNumber}
+              className={currentPage === pageNumber ? styles.active : ''}
+              onClick={() => handlePageClick(pageNumber)}
+              role="button"
+              tabIndex="0"
+            >
+              {pageNumber}
+            </span>
+          ))}
+          <button
+            onClick={() => handlePageClick(currentPage + 1)}
+            disabled={currentPage === totalPages}
+          >
+            Siguiente
+          </button>
+        </div>
+      );
+  };
+
   return (
     <>
-    <Head>
-      Diplomas
-    </Head>
-                               
-                    <div className={styles.contenedordiploma}>
-                          
-                            {diplomas.map((diplom) => (
-                              <div key={diplom.id}> 
-                              <Image key={diplom.id} 
-                                    src={diplom.src} 
-                                    alt={diplom.alt} 
-                                    className={styles.diplomaimg} 
-                                    
-                                    
-                              />
-                              <h6 key={diplom.id}>{diplom.alt}</h6>
-                              </div>
-                            ))}
-                      
-                    </div>
-                
-
- 
-  </>
+      <Head>
+        <title>Diplomas</title>
+      </Head>
+      {renderPagination()}
+      <div className={styles.contenedordiploma}>
+        {renderDiplomas()}
+      </div>
+      
+    </>
   );
 };
 
 export default DiplomaContainer;
-
-
-
-
-
