@@ -1,7 +1,9 @@
 // proyects
 @import '@styles/_vars.scss';
 
-
+.allproyectcontainer{
+    background-color: $--main-color;
+}
 .Titulo {
     text-align: center;
     margin: 35px;
@@ -11,7 +13,7 @@
 .contenedorProyectos {
     width: 300px;
     margin: auto auto 35px auto;
-    background-color: $--background-color;
+    background-color: $--secondary-color;
     padding: 2px 0px 2px 0px;
     border-radius: 5px;
     
@@ -35,7 +37,7 @@
 
     }
     .proyectoTitulo {
-        color: $--main-color;
+        color: $--background-color;
         text-align: center;
     }
     .proyectoDescripcion {
@@ -43,7 +45,7 @@
         text-align: justify;
         margin: 20px;
         font-size: $--sm;
-        color: $--main-color;
+        color: $--complementary-color;
     }
 
     .skillsProyectos {
