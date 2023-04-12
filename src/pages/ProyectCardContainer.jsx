@@ -53,7 +53,7 @@ const ProyectCardContainer = () => {
          <Image className={styles.skillsProyectoimg} src={node} alt="node"/>
          <Image className={styles.skillsProyectoimg} src={js} alt="javascript"/>
      </div>
-     <button className ={styles.botoncontacto}> <Link href="https://nextstorejs.vercel.app">Visit me!</Link> </button>
+     <button className ={styles.botoncontacto}> <Link href="https://react-next-admin-app.vercel.app/dashboard/indexd">Visit me!</Link> </button>
      
  </div>
        {/* proyecto numero uno  */}
